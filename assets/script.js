@@ -9,12 +9,13 @@ function runPage(){
 // Save button click event lister 
 function dateSave (){
   $("btn saveBtn col-2 col-md-1").on('click'), (dateSave);
-  dateSave.preventDefault();
+  dateSave.preventDefault()
 }
+
 var saveButton = $(dateSave)
 
 if ( localStorage.dateSave){
-  localStorage.dateSave = saveButton.('click');
+  localStorage.dateSave = saveButton('click');
 } else {
   localStorage.dateSave
 }
@@ -42,4 +43,4 @@ if ( localStorage.dateSave){
   // the values of the corresponding textarea elements. HINT: How can the id
   // attribute of each time-block be used to do this?
   //
-  // TODO: Add code to display the current date in the header of the page.});
+  // TODO: Add code to display the current date in the header of the page.})
