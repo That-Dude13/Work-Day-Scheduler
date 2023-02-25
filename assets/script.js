@@ -6,22 +6,19 @@ function runPage(){
   console.log('ready');
 }
 
-
-
-
-  
-  
-  
 // Save button click event lister 
 function dateSave (){
-    $('.btn').click ('dateSave');
-    $(dateSave).localStorage();
-    console.log ('dateSave');
+  $("btn saveBtn col-2 col-md-1").on('click'), (dateSave);
+  dateSave.preventDefault();
 }
-// $('.btn').click ('dateSave');{
-//   $(dateSave).localStorage();
-//   console.log ('dateSave');
-// }
+var saveButton = $(dateSave)
+
+if ( localStorage.dateSave){
+  localStorage.dateSave = saveButton.('click');
+} else {
+  localStorage.dateSave
+}
+
 
   
   
