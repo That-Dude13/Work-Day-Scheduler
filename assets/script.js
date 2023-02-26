@@ -12,6 +12,13 @@ $('.saveBtn').on('click', function () {
   localStorage.setItem(time, value);
 
   });
+
+  // Show current date in header
+  var todaysDate = $('#currentDay');
+  todaysDate.text(now);
+
+  
+
 });
 
   
