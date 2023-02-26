@@ -13,12 +13,15 @@ $('.saveBtn').on('click', function () {
 
   });
 
-  // // Show current date in header
-  var now = dayjs(now); 
-  var showDay = $('.currentDay').attr('header');
+  //Show current date in header
+  var now = dayjs(); 
+  $('#currentDay').document.text(now);
+  console.log(now)
+    now.format(MMM,D,YYY);
 
-  $(now).date(showDay(1));
-    console.log(showDay);
+
+
+  
   
 
 
