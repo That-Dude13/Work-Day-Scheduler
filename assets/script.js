@@ -9,13 +9,21 @@ $('.saveBtn').on('click', function () {
 
   console.log(text, time);
 
-  localStorage.setItem(time, value);
+  localStorage.setItem(time, text);
 
   });
 
-  // Show current date in header
-  var todaysDate = $('#currentDay');
-  todaysDate.text(now);
+  // // Show current date in header
+  var now = dayjs(now); 
+  var showDay = $('.currentDay').attr('header');
+
+  $(now).date(showDay(1));
+    console.log(showDay);
+  
+
+
+  // dayjs().date() // gets day of current month
+  // dayjs().date(1) // returns new dayjs object
 
   
 
