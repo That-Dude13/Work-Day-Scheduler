@@ -14,10 +14,10 @@ $('.saveBtn').on('click', function () {
   });
 
   //Show current date in header
-  var now = dayjs(); 
-  $('#currentDay').document.text(now);
-  console.log(now)
-    now.format(MMM,D,YYY);
+  var showDate = dayjs().format('MMM D YYYY'); 
+  $('#currentDay').text(showDate);
+  console.log(showDate)
+    
 
 
 
