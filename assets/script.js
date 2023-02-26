@@ -1,25 +1,18 @@
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
-function runPage(){
-  $(document).ready('runPage');
-  console.log('ready');
-}
 
-// Save button click event lister 
-function dateSave (){
-  $("btn saveBtn col-2 col-md-1").on('click'), (dateSave);
-  dateSave.preventDefault()
-}
+$(document).ready(function () {
+$('.saveBtn').on('click', function () {
+  var text = $(this).siblings('.description').val();
+  var time = $(this).parent().attr('id').split("-")[1];
 
-var saveButton = $(dateSave)
+  console.log(text, time);
 
-if ( localStorage.dateSave){
-  localStorage.dateSave = saveButton('click');
-} else {
-  localStorage.dateSave
-}
+  localStorage.setItem(time, value);
 
+  });
+});
 
   
   
