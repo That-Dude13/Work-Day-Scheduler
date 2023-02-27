@@ -19,21 +19,30 @@ $(document).ready(function () {
   $('#currentDay').text(showDate);
   console.log(showDate)
   
+  
+  
   // Past, present, future
   var currentTime = dayjs()
   console.log(currentTime)
-//   var i = 
+ $('.row').each(function(){
+ var everyHour = parseInt($(this).attr('id').split("-")[1])
+ console.log(everyHour)
+
+ if(everyHour < currentTime) {
+ }else if (everyHour==currentTime){present}else
+
+})
+
+// var i = 
 // for (var i = 0; i < 25; i++){
 //   if (i < currentTime) {
-//     $(#)
+//     $(#past)
 //   }
 // }
-// if('#hour-9') < now
+// if('#hour-9') < currentTime
 
 // User inour from local storage
-var nineAm = localStorage.getItem('time, text')
-document.getElementById('#hour-9').value = nineAm
-  
+$('#hour-9').val(localStorage.getItem('9')) 
 
 });
 
