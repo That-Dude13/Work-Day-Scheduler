@@ -3,7 +3,8 @@
 // in the html.
 
 $(document).ready(function () {
-$('.saveBtn').on('click', function () {
+// Save button local storage
+  $('.saveBtn').on('click', function () {
   var text = $(this).siblings('.description').val();
   var time = $(this).parent().attr('id').split("-")[1];
 
@@ -14,20 +15,24 @@ $('.saveBtn').on('click', function () {
   });
 
   //Show current date in header
-  var showDate = dayjs().format('MMM D YYYY'); 
+  var showDate = dayjs().format('MMMM D, YYYY'); 
   $('#currentDay').text(showDate);
   console.log(showDate)
-    
-
-
-
   
-  
+  // Past, present, future
+  var currentTime = dayjs()
+  console.log(currentTime)
+//   var i = 
+// for (var i = 0; i < 25; i++){
+//   if (i < currentTime) {
+//     $(#)
+//   }
+// }
+// if('#hour-9') < now
 
-
-  // dayjs().date() // gets day of current month
-  // dayjs().date(1) // returns new dayjs object
-
+// User inour from local storage
+var nineAm = localStorage.getItem('time, text')
+document.getElementById('#hour-9').value = nineAm
   
 
 });
